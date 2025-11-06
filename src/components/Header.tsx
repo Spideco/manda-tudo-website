@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo-manda-tudo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,10 +35,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 hover-glow">
-            <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Manda Tudo
-            </div>
+          <Link to="/" className="flex items-center hover-glow">
+            <img 
+              src={logo} 
+              alt="Manda Tudo Distribuidora" 
+              className="h-12 w-auto md:h-14 transition-transform hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation */}
