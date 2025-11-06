@@ -8,7 +8,7 @@ import teamImage from "@/assets/team-photo.jpg";
 import productsImage from "@/assets/products-display.jpg";
 const Index = () => {
   return <div className="min-h-screen">
-      <Header className="bg-white" />
+      <Header />
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center" style={{

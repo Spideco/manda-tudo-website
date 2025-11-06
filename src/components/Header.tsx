@@ -28,9 +28,9 @@ const Header = () => {
     path: "/contato"
   }];
   const isActive = (path: string) => location.pathname === path;
-  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
-      <div className="container mx-auto px-4 py-4 bg-white">
-        <div className="flex items-center justify-between bg-white">
+  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${isScrolled ? "shadow-md" : ""}`}>
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center hover-glow">
             <img src={logo} alt="Manda Tudo Distribuidora" className="h-12 w-auto md:h-14 transition-transform hover:scale-105" />
