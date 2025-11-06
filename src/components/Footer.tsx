@@ -20,7 +20,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-lg mb-4 text-primary">Links Rápidos</h4>
+            <h4 className="font-bold text-lg mb-4 text-primary">Links</h4>
             <nav className="space-y-2">
               <Link
                 to="/"
@@ -55,15 +55,15 @@ const Footer = () => {
             <div className="space-y-3 text-secondary-foreground/80">
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="text-primary mt-1 flex-shrink-0" />
-                <span>Rua Exemplo, 123 - Centro<br />São Paulo, SP - CEP 01000-000</span>
+                <span>Loja 1 - Rua Bom Jardim, 139 - Santa Luzia<br />São Paulo, SP - CEP 01000-000</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-primary flex-shrink-0" />
-                <span>(11) 1234-5678</span>
+                <span>(12) 98130-5757</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary flex-shrink-0" />
-                <span>contato@mandatudo.com.br</span>
+                <span>mandatudotaubate@gmail.com</span>
               </div>
             </div>
 
