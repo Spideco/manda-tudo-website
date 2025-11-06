@@ -55,7 +55,7 @@ const Footer = () => {
             <div className="space-y-3 text-secondary-foreground/80">
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="text-primary mt-1 flex-shrink-0" />
-                <span>Loja 1 - Rua Bom Jardim, 139 - Santa Luzia<br />São Paulo, SP - CEP 01000-000</span>
+                <span>Loja 1 - Rua Bom Jardim, 139 - Santa Luzia<br />Loja 2 - Rua Coronel João Afonso, 36 - Centro</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-primary flex-shrink-0" />
@@ -70,7 +70,7 @@ const Footer = () => {
             {/* Social Media */}
             <div className="mt-6 flex space-x-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/mandatudotaubate/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-secondary-foreground/80 hover:text-primary transition-colors"
@@ -79,7 +79,7 @@ const Footer = () => {
                 <Instagram size={24} />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/distribuidoramandatudo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-secondary-foreground/80 hover:text-primary transition-colors"
