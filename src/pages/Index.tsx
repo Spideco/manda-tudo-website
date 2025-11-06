@@ -6,21 +6,16 @@ import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-warehouse.jpg";
 import teamImage from "@/assets/team-photo.jpg";
 import productsImage from "@/assets/products-display.jpg";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
-      <Header />
+  return <div className="min-h-screen">
+      <Header className="bg-white" />
 
       {/* Hero Section */}
-      <section
-        className="relative h-screen flex items-center justify-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <section className="relative h-screen flex items-center justify-center" style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center"
+    }}>
         <div className="container mx-auto px-4 text-center text-white">
           <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">
             Manda Tudo Distribuidora
@@ -63,11 +58,7 @@ const Index = () => {
               </Button>
             </div>
             <div className="section-fade-in hover-lift rounded-2xl overflow-hidden shadow-card">
-              <img
-                src={teamImage}
-                alt="Equipe Manda Tudo"
-                className="w-full h-auto"
-              />
+              <img src={teamImage} alt="Equipe Manda Tudo" className="w-full h-auto" />
             </div>
           </div>
         </div>
@@ -121,11 +112,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="section-fade-in hover-lift rounded-2xl overflow-hidden shadow-card order-2 md:order-1">
-              <img
-                src={productsImage}
-                alt="Produtos Manda Tudo"
-                className="w-full h-auto"
-              />
+              <img src={productsImage} alt="Produtos Manda Tudo" className="w-full h-auto" />
             </div>
             <div className="section-fade-in order-1 md:order-2">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -182,8 +169,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
