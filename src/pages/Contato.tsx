@@ -6,25 +6,25 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Linkedin } from "lucid
 import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
 const Contato = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Campos obrigatórios",
         description: "Por favor, preencha todos os campos obrigatórios.",
-        variant: "destructive",
+        variant: "destructive"
       });
       return;
     }
@@ -32,19 +32,24 @@ const Contato = () => {
     // Simulate form submission
     toast({
       title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve. Obrigado!",
+      description: "Entraremos em contato em breve. Obrigado!"
     });
 
     // Reset form
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: ""
+    });
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   };
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
 
       {/* Hero Section */}
@@ -73,59 +78,28 @@ const Contato = () => {
                   <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
                     Nome Completo *
                   </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Seu nome"
-                    required
-                  />
+                  <Input id="name" name="name" type="text" value={formData.name} onChange={handleChange} placeholder="Seu nome" required />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
                     E-mail *
                   </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="seu@email.com"
-                    required
-                  />
+                  <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} placeholder="seu@email.com" required />
                 </div>
 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium mb-2 text-foreground">
                     Telefone
                   </label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="(11) 12345-6789"
-                  />
+                  <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="(11) 12345-6789" />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
                     Mensagem *
                   </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Como podemos ajudar?"
-                    rows={6}
-                    required
-                  />
+                  <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Como podemos ajudar?" rows={6} required />
                 </div>
 
                 <Button type="submit" variant="hero" size="lg" className="w-full">
@@ -193,33 +167,13 @@ const Contato = () => {
               <div>
                 <h3 className="text-xl font-bold mb-4 text-foreground">Redes Sociais</h3>
                 <div className="flex space-x-4">
-                  <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center hover-glow transition-all"
-                    aria-label="Instagram"
-                  >
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center hover-glow transition-all" aria-label="Instagram">
                     <Instagram className="text-white" size={24} />
                   </a>
-                  <a
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center hover-glow transition-all"
-                    aria-label="Facebook"
-                  >
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center hover-glow transition-all" aria-label="Facebook">
                     <Facebook className="text-white" size={24} />
                   </a>
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center hover-glow transition-all"
-                    aria-label="LinkedIn"
-                  >
-                    <Linkedin className="text-white" size={24} />
-                  </a>
+                  
                 </div>
               </div>
             </div>
@@ -234,23 +188,14 @@ const Contato = () => {
             Nossa Localização
           </h2>
           <div className="rounded-2xl overflow-hidden shadow-card h-96">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0977823894805!2d-46.65408668502207!3d-23.56161098467891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623456789012!5m2!1spt-BR!2sbr"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa de localização da Manda Tudo Distribuidora"
-            />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0977823894805!2d-46.65408668502207!3d-23.56161098467891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623456789012!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{
+            border: 0
+          }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Mapa de localização da Manda Tudo Distribuidora" />
           </div>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contato;
