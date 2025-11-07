@@ -15,7 +15,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const navLinks = [{
-    name: "Home",
+    name: "Pagina Inicial",
     path: "/"
   }, {
     name: "Quem Somos",
