@@ -26,7 +26,7 @@ const Footer = () => {
                 to="/"
                 className="block text-secondary-foreground/80 hover:text-primary transition-colors"
               >
-                Home
+                Página Inicial
               </Link>
               <Link
                 to="/quem-somos"
