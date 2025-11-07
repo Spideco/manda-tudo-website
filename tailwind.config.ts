@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         heading: ["Inter", "system-ui", "sans-serif"],
-        body: ["Baloo 2", "system-ui", "sans-serif"],
+        body: ["Inter", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
