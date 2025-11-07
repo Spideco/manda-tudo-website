@@ -57,7 +57,7 @@ const Footer = () => {
                 <MapPin size={20} className="text-primary mt-1 flex-shrink-0" />
                 <span>Loja 1 - Rua Bom Jardim, 139 - Santa Luzia<br />Loja 2 - Rua Coronel João Afonso, 36 - Centro</span>
               </div>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-start space-x-3">
                 <Phone size={20} className="text-primary flex-shrink-0" />
                 <span>Contato Loja 1:(12) 98130-5757<br />Contato Loja 2:(12) 98806-9694</span>
               </div>
