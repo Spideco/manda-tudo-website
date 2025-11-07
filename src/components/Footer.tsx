@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Instagram, Facebook, Linkedin } from "lucide-react";
-
+import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-secondary text-secondary-foreground">
+  return <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About */}
@@ -22,28 +19,16 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4 text-primary">Links</h4>
             <nav className="space-y-2">
-              <Link
-                to="/"
-                className="block text-secondary-foreground/80 hover:text-primary transition-colors"
-              >
+              <Link to="/" className="block text-secondary-foreground/80 hover:text-primary transition-colors">
                 Página Inicial
               </Link>
-              <Link
-                to="/quem-somos"
-                className="block text-secondary-foreground/80 hover:text-primary transition-colors"
-              >
+              <Link to="/quem-somos" className="block text-secondary-foreground/80 hover:text-primary transition-colors">
                 Quem Somos
               </Link>
-              <Link
-                to="/nossa-historia"
-                className="block text-secondary-foreground/80 hover:text-primary transition-colors"
-              >
+              <Link to="/nossa-historia" className="block text-secondary-foreground/80 hover:text-primary transition-colors">
                 Nossa História
               </Link>
-              <Link
-                to="/contato"
-                className="block text-secondary-foreground/80 hover:text-primary transition-colors"
-              >
+              <Link to="/contato" className="block text-secondary-foreground/80 hover:text-primary transition-colors">
                 Contato
               </Link>
             </nav>
@@ -69,32 +54,14 @@ const Footer = () => {
 
             {/* Social Media */}
             <div className="mt-6 flex space-x-4">
-              <a
-                href="https://www.instagram.com/mandatudotaubate/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                aria-label="Instagram"
-              >
+              <a href="https://www.instagram.com/mandatudotaubate/" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/80 hover:text-primary transition-colors" aria-label="Instagram">
                 <Instagram size={24} />
               </a>
-              <a
-                href="https://www.facebook.com/distribuidoramandatudo/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                aria-label="Facebook"
-              >
+              <a href="https://www.facebook.com/distribuidoramandatudo/" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/80 hover:text-primary transition-colors" aria-label="Facebook">
                 <Facebook size={24} />
               </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={24} />
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/80 hover:text-primary transition-colors" aria-label="LinkedIn">
+                
               </a>
             </div>
           </div>
@@ -105,8 +72,6 @@ const Footer = () => {
           <p>&copy; {currentYear} Manda Tudo Distribuidora. Todos os direitos reservados.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
