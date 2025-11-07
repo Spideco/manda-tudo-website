@@ -32,8 +32,8 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center hover-glow">
-            <img src={logo} alt="Manda Tudo Distribuidora" className="h-12 w-auto md:h-14 transition-transform hover:scale-105" />
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Manda Tudo Distribuidora" className="h-12 w-auto md:h-14" />
           </Link>
 
           {/* Desktop Navigation */}
