@@ -10,12 +10,11 @@ export default {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
-      },
+      },  
     },
     extend: {
       fontFamily: {
-        heading: ["Baloo 2", "system-ui", "sans-serif"],
-        body: ["Baloo 2", "system-ui", "sans-serif"],
+        sans: ['Inter', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
