@@ -23,7 +23,7 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-4 text-primary">Links</h4>
             <nav className="space-y-2">
               <Link
-                to="/"
+                to="/pagina-inicial"
                 className="block text-secondary-foreground/80 hover:text-primary transition-colors"
               >
                 Página Inicial
