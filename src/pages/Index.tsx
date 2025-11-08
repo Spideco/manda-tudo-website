@@ -114,7 +114,7 @@ const Index = () => {
                 </li>
                 <li className="flex items-start">
                   <ArrowRight className="mr-2 mt-1 flex-shrink-0" />
-                  <span>Sorvetes e picolés artesanais</span>
+                  <span>​Carnes, bacons e frangos</span>
                 </li>
                 <li className="flex items-start">
                   <ArrowRight className="mr-2 mt-1 flex-shrink-0" />
