@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
+import { Phone, Mail, Instagram, Facebook } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-secondary text-secondary-foreground">
@@ -39,8 +39,8 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-4 text-primary">Contato</h4>
             <div className="space-y-3 text-secondary-foreground/80">
               <div className="flex items-center space-x-3">
-                <MapPin size={20} className="text-primary mt-1 flex-shrink-0" />
-                <span>Loja 1 - Rua Bom Jardim, 139 - Santa Luzia<br />Loja 2 - Rua Coronel João Afonso, 36 - Centro</span>
+                
+                
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-primary flex-shrink-0" />
