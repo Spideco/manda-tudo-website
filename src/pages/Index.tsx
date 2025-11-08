@@ -110,7 +110,7 @@ const Index = () => {
                 </li>
                 <li className="flex items-start">
                   <ArrowRight className="mr-2 mt-1 flex-shrink-0" />
-                  <span>Cremes americanos em diversos sabores</span>
+                  <span>Coberturas e recheios diversos</span>
                 </li>
                 <li className="flex items-start">
                   <ArrowRight className="mr-2 mt-1 flex-shrink-0" />
