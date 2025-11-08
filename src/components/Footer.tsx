@@ -39,12 +39,12 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-4 text-primary">Contato</h4>
             <div className="space-y-3 text-secondary-foreground/80">
               <div className="flex items-center space-x-3">
-                
-                
+                <Phone size={20} className="text-primary flex-shrink-0" />
+                <span>Contato Loja 1:(12) 98130-5757</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-primary flex-shrink-0" />
-                <span>Contato Loja 1:(12) 98130-5757<br />Contato Loja 2:(12) 98806-9694</span>
+                <span>Contato Loja 2:(12) 98806-9694</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary flex-shrink-0" />
