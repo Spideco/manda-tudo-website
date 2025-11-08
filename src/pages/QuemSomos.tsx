@@ -4,10 +4,8 @@ import { ArrowRight, Target, Eye, Award } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import teamImage from "@/assets/team-photo.jpg";
-
 const QuemSomos = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
 
       {/* Hero Section */}
@@ -16,10 +14,7 @@ const QuemSomos = () => {
           <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6 text-white">
             Quem Somos
           </h1>
-          <p className="hero-subtitle text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-            Conheça a história e os valores que fazem da Manda Tudo referência em distribuição 
-            de alimentos congelados
-          </p>
+          <p className="hero-subtitle text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">Conheça a história e os valores que fazem do Manda Tudo referência em distribuição de alimentos</p>
         </div>
       </section>
 
@@ -49,11 +44,7 @@ const QuemSomos = () => {
               </p>
             </div>
             <div className="section-fade-in hover-lift rounded-2xl overflow-hidden shadow-card">
-              <img
-                src={teamImage}
-                alt="Equipe Manda Tudo"
-                className="w-full h-auto"
-              />
+              <img src={teamImage} alt="Equipe Manda Tudo" className="w-full h-auto" />
             </div>
           </div>
 
@@ -141,8 +132,6 @@ const QuemSomos = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default QuemSomos;
