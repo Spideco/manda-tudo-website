@@ -115,15 +115,7 @@ const QuemSomos = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 text-center">
-          
-          
-          <Button asChild variant="hero" size="lg">
-            
-          </Button>
-        </div>
-      </section>
+      
 
       <Footer />
     </div>;
