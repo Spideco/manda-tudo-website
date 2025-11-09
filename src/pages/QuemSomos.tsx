@@ -117,16 +117,10 @@ const QuemSomos = () => {
       {/* CTA Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6 text-foreground">
-            Quer fazer parte da nossa história?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Entre em contato e descubra como podemos ser parceiros no sucesso do seu negócio.
-          </p>
+          
+          
           <Button asChild variant="hero" size="lg">
-            <Link to="/contato">
-              Fale Conosco <ArrowRight className="ml-2" />
-            </Link>
+            
           </Button>
         </div>
       </section>
