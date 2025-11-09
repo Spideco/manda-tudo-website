@@ -38,7 +38,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {navLinks.map(link => <Link key={link.path} to={link.path} className={`font-medium transition-colors ${isActive(link.path) ? "text-primary" : "text-foreground hover:text-primary"}`}>
+            {navLinks.map(link => <Link key={link.path} to={link.path} className={`font-medium transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-[-4px] after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left ${isActive(link.path) ? "text-primary after:scale-x-100" : "text-foreground hover:text-primary"}`}>
                 {link.name}
               </Link>)}
           </nav>
