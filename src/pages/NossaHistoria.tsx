@@ -30,9 +30,7 @@ const NossaHistoria = () => {
               amor pelo que fazemos. Cada produto que entregamos carrega nosso compromisso 
               em fazer a diferença."
             </blockquote>
-            <p className="text-lg text-muted-foreground font-semibold">
-              — Fundadora da Manda Tudo
-            </p>
+            <p className="text-lg text-muted-foreground font-semibold">— Amanda Souza</p>
           </div>
         </div>
       </section>
