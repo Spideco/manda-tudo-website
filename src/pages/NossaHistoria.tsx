@@ -4,10 +4,8 @@ import { ArrowRight, Quote } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import founderImage from "@/assets/founder-portrait.jpg";
-
 const NossaHistoria = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
 
       {/* Hero Section */}
@@ -44,11 +42,7 @@ const NossaHistoria = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="section-fade-in hover-lift rounded-2xl overflow-hidden shadow-card">
-              <img
-                src={founderImage}
-                alt="Fundadora da Manda Tudo"
-                className="w-full h-auto"
-              />
+              <img src={founderImage} alt="Fundadora da Manda Tudo" className="w-full h-auto" />
             </div>
             <div className="section-fade-in">
               <h2 className="text-4xl font-bold mb-6 text-foreground">
@@ -139,26 +133,9 @@ const NossaHistoria = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-secondary text-secondary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6 text-primary">
-            Faça Parte da Nossa História
-          </h2>
-          <p className="text-xl text-secondary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Estamos sempre prontos para novos desafios e parcerias. Entre em contato e 
-            vamos crescer juntos!
-          </p>
-          <Button asChild variant="hero" size="lg">
-            <Link to="/contato">
-              Entre em Contato <ArrowRight className="ml-2" />
-            </Link>
-          </Button>
-        </div>
-      </section>
+      
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default NossaHistoria;
