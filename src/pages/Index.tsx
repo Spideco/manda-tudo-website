@@ -118,7 +118,7 @@ const Index = () => {
                 </li>
                 <li className="flex items-start">
                   <ArrowRight className="mr-2 mt-1 flex-shrink-0" />
-                  <span>Polpas de frutas e produtos congelados especiais</span>
+                  <span>Molhos e temperos profissionais</span>
                 </li>
               </ul>
               <Button asChild variant="secondary" size="lg">
