@@ -40,7 +40,7 @@ const Index = () => {
                 Quem Somos
               </h2>
               <p className="text-lg text-muted-foreground mb-6">O Manda Tudo é uma distribuidora do ramo alimentício especializada em produtos de alta qualidade. Nascemos da paixão por distribuir sabores que trazem felicidade para milhares de famílias.</p>
-              <p className="text-lg text-muted-foreground mb-8">Com anos de experiência no mercado, atendemos diversos estabelecimentos comerciais, levando sabor os melhores e mais saborosos produtos do mercado.</p>
+              
               <Button asChild variant="default" size="lg">
                 <Link to="/quem-somos">
                   Saiba mais <ArrowRight className="ml-2" />
@@ -114,7 +114,7 @@ const Index = () => {
                 </li>
                 <li className="flex items-start">
                   <ArrowRight className="mr-2 mt-1 flex-shrink-0" />
-                  <span>Sorvetes e picolés artesanais</span>
+                  <span>Carnes, bacons e frangos</span>
                 </li>
                 <li className="flex items-start">
                   <ArrowRight className="mr-2 mt-1 flex-shrink-0" />
