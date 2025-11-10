@@ -110,7 +110,7 @@ const Index = () => {
             />
           </div>
           
-          <Button asChild variant="secondary" size="lg">
+          <Button asChild variant="secondary" size="lg" className="h-14 px-12 text-lg">
             <a 
               href="https://mandaofertas.my.canva.site/catalogo-manda-tudo-2025"
               target="_blank"
