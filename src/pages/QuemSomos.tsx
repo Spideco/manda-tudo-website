@@ -70,7 +70,7 @@ const QuemSomos = () => {
       {/* Values Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+          <h2 className="text-4xl font-bold text-center mb-16 md:text-6xl">
             Nossos Valores
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
