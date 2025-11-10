@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-warehouse.jpg";
 import teamImage from "@/assets/team-photo.jpg";
 import catalogoImage from "@/assets/catalogo-preview.jpg";
-
 const Index = () => {
   return <div className="min-h-screen">
       <Header />
@@ -98,24 +97,16 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Nossos Produtos
           </h2>
-          <p className="text-lg text-white/90 max-w-3xl mx-auto mb-8">
+          <p className="text-white/90 max-w-3xl mx-auto mb-8 text-2xl">
             Trabalhamos com uma linha completa de produtos que atendem às necessidades de restaurantes, lanchonetes, sorveterias e muito mais.
           </p>
           
           <div className="max-w-4xl mx-auto mb-8">
-            <img 
-              src={catalogoImage} 
-              alt="Catálogo de Produtos Manda Tudo 2025" 
-              className="w-full h-auto rounded-2xl shadow-card hover-lift"
-            />
+            <img src={catalogoImage} alt="Catálogo de Produtos Manda Tudo 2025" className="w-full h-auto rounded-2xl shadow-card hover-lift" />
           </div>
           
           <Button asChild variant="secondary" size="lg" className="h-14 px-12 text-lg">
-            <a 
-              href="https://mandaofertas.my.canva.site/catalogo-manda-tudo-2025"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://mandaofertas.my.canva.site/catalogo-manda-tudo-2025" target="_blank" rel="noopener noreferrer">
               Ver catálogo completo <ArrowRight className="ml-2" />
             </a>
           </Button>
