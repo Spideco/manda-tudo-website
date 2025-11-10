@@ -26,22 +26,9 @@ const QuemSomos = () => {
               <h2 className="text-4xl font-bold mb-6 text-foreground">
                 Nossa Trajetória
               </h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                A Manda Tudo nasceu do sonho de criar uma distribuidora que não apenas entregasse 
-                produtos, mas que levasse qualidade, confiança e sabor para cada cliente. Fundada 
-                com o compromisso de revolucionar o mercado de alimentos congelados, crescemos 
-                constantemente mantendo nossos valores.
-              </p>
-              <p className="text-lg text-muted-foreground mb-6">
-                Ao longo dos anos, expandimos nossa operação e hoje atendemos centenas de 
-                estabelecimentos comerciais em toda a região. Nossa equipe é composta por 
-                profissionais apaixonados que compartilham da mesma visão: distribuir sabores 
-                extraordinários com excelência.
-              </p>
-              <p className="text-lg text-muted-foreground">
-                Cada entrega é feita com o mesmo cuidado e dedicação do primeiro dia, porque 
-                sabemos que nosso sucesso está diretamente ligado ao sucesso dos nossos clientes.
-              </p>
+              <p className="text-lg text-muted-foreground mb-6">O Manda Tudo nasceu do sonho de ser uma distribuidora que não apenas entregasse produtos, mas que levasse qualidade, confiança e sabor para cada cliente. </p>
+              <p className="text-lg text-muted-foreground mb-6">Ao longo dos anos, expandimos nossa operação e hoje atendemos centenas de estabelecimentos comerciais em toda a região do Va. Nossa equipe é composta por profissionais apaixonados que compartilham da mesma visão: distribuir sabores extraordinários com excelência.</p>
+              <p className="text-lg text-muted-foreground">Cada entrega é feita com cuidado, esmero e dedicação, pois sabemos que nosso sucesso está diretamente ligado ao sucesso dos nossos clientes.</p>
             </div>
             <div className="section-fade-in hover-lift rounded-2xl overflow-hidden shadow-card">
               <img src={teamImage} alt="Equipe Manda Tudo" className="w-full h-auto" />
