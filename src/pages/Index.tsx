@@ -93,41 +93,23 @@ const Index = () => {
 
       {/* Products Preview */}
       <section className="py-20 bg-gradient-primary">
-        <div className="container mx-auto px-4">
-          {/* Título e Texto Centralizados */}
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Nossos Produtos
-            </h2>
-            <p className="text-lg text-white/90 max-w-3xl mx-auto">
-              Trabalhamos com uma linha completa de produtos que atendem às necessidades de restaurantes, lanchonetes, sorveterias e muito mais.
-            </p>
-          </div>
-
-          {/* Iframe do Catálogo Canva */}
-          <div className="max-w-6xl mx-auto mb-8">
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                src="https://mandaofertas.my.canva.site/catalogo-manda-tudo-2025"
-                className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-card"
-                allowFullScreen
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          {/* Botão CTA Atualizado */}
-          <div className="text-center">
-            <Button asChild variant="secondary" size="lg">
-              <a 
-                href="https://mandaofertas.my.canva.site/catalogo-manda-tudo-2025"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver catálogo completo <ArrowRight className="ml-2" />
-              </a>
-            </Button>
-          </div>
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            Nossos Produtos
+          </h2>
+          <p className="text-lg text-white/90 max-w-3xl mx-auto mb-8">
+            Trabalhamos com uma linha completa de produtos que atendem às necessidades de restaurantes, lanchonetes, sorveterias e muito mais.
+          </p>
+          
+          <Button asChild variant="secondary" size="lg">
+            <a 
+              href="https://mandaofertas.my.canva.site/catalogo-manda-tudo-2025"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver catálogo completo <ArrowRight className="ml-2" />
+            </a>
+          </Button>
         </div>
       </section>
 
