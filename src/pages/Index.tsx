@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-warehouse.jpg";
 import teamImage from "@/assets/team-photo.jpg";
-import productsImage from "@/assets/products-display.jpg";
+
 const Index = () => {
   return <div className="min-h-screen">
       <Header />
@@ -94,39 +94,39 @@ const Index = () => {
       {/* Products Preview */}
       <section className="py-20 bg-gradient-primary">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="section-fade-in hover-lift rounded-2xl overflow-hidden shadow-card order-2 md:order-1">
-              <img src={productsImage} alt="Produtos Manda Tudo" className="w-full h-auto" />
+          {/* Título e Texto Centralizados */}
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Nossos Produtos
+            </h2>
+            <p className="text-lg text-white/90 max-w-3xl mx-auto">
+              Trabalhamos com uma linha completa de produtos que atendem às necessidades de restaurantes, lanchonetes, sorveterias e muito mais.
+            </p>
+          </div>
+
+          {/* Iframe do Catálogo Canva */}
+          <div className="max-w-6xl mx-auto mb-8">
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src="https://mandaofertas.my.canva.site/catalogo-manda-tudo-2025"
+                className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-card"
+                allowFullScreen
+                loading="lazy"
+              />
             </div>
-            <div className="section-fade-in order-1 md:order-2">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                Nossos Produtos
-              </h2>
-              <p className="text-lg text-white/90 mb-6">Trabalhamos com uma linha completa de produtos que atendem às necessidades de restaurantes, lanchonetes, sorveterias e muito mais.</p>
-              <ul className="space-y-4 text-lg text-white/90 mb-8">
-                <li className="flex items-start">
-                  <ArrowRight className="mr-2 mt-1 flex-shrink-0" />
-                  <span>Açaís e sorvetes de alta qualidade</span>
-                </li>
-                <li className="flex items-start">
-                  <ArrowRight className="mr-2 mt-1 flex-shrink-0" />
-                  <span>Coberturas e recheios diversos</span>
-                </li>
-                <li className="flex items-start">
-                  <ArrowRight className="mr-2 mt-1 flex-shrink-0" />
-                  <span>Carnes, bacons e frangos</span>
-                </li>
-                <li className="flex items-start">
-                  <ArrowRight className="mr-2 mt-1 flex-shrink-0" />
-                  <span>Molhos e temperos profissionais</span>
-                </li>
-              </ul>
-              <Button asChild variant="secondary" size="lg">
-                <Link to="/contato">
-                  Solicite um orçamento <ArrowRight className="ml-2" />
-                </Link>
-              </Button>
-            </div>
+          </div>
+
+          {/* Botão CTA Atualizado */}
+          <div className="text-center">
+            <Button asChild variant="secondary" size="lg">
+              <a 
+                href="https://mandaofertas.my.canva.site/catalogo-manda-tudo-2025"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver catálogo completo <ArrowRight className="ml-2" />
+              </a>
+            </Button>
           </div>
         </div>
       </section>
