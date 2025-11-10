@@ -49,31 +49,7 @@ const QuemSomos = () => {
           </div>
 
           {/* Mission, Vision, Values */}
-          <div className="grid md:grid-cols-3 gap-8">
-            
-
-            <div className="p-8 rounded-xl bg-muted hover-lift">
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-primary">
-                <Eye className="text-white" size={32} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Visão</h3>
-              <p className="text-muted-foreground">
-                Ser reconhecida como a distribuidora líder em alimentos congelados na região, 
-                referência em qualidade, inovação e atendimento ao cliente.
-              </p>
-            </div>
-
-            <div className="p-8 rounded-xl bg-muted hover-lift">
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-primary">
-                <Award className="text-white" size={32} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Valores</h3>
-              <p className="text-muted-foreground">
-                Qualidade em tudo que fazemos, compromisso com nossos clientes, integridade 
-                nas relações, inovação constante e paixão pelo que entregamos.
-              </p>
-            </div>
-          </div>
+          
         </div>
       </section>
 
