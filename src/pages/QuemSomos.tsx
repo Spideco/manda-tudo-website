@@ -43,7 +43,7 @@ const QuemSomos = () => {
       {/* Stats Section */}
       <section className="py-20 bg-gradient-primary">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 text-white">
+          <h2 className="font-bold text-center mb-16 text-white text-6xl">
             Nossa Presença
           </h2>
           <div className="grid md:grid-cols-4 gap-8 text-center">
