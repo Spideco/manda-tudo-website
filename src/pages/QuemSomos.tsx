@@ -87,7 +87,7 @@ const QuemSomos = () => {
                 <Users className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Agilidade</h3>
-              <p className="text-muted-foreground">Dedicação total em entregas ráidas, agilizando sempre o seu negócio.</p>
+              <p className="text-muted-foreground">Dedicação total em entregas rápidas, agilizando sempre o seu negócio.</p>
             </div>
 
             <div className="text-center p-8 rounded-xl bg-card shadow-card hover-lift">
