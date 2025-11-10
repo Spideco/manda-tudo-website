@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Target, Eye, Award } from "lucide-react";
+import { ArrowRight, Target, Eye, Award, Package, Users, Heart } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import teamImage from "@/assets/team-photo.jpg";
@@ -62,6 +62,43 @@ const QuemSomos = () => {
             <div className="section-fade-in">
               <div className="text-5xl md:text-6xl font-bold mb-2 text-white">100%</div>
               <div className="text-lg text-white/90">Satisfação Garantida</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+            Nossos Valores
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center p-8 rounded-xl bg-card shadow-card hover-lift">
+              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-primary">
+                <Package className="text-white" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Excêlencia</h3>
+              <p className="text-muted-foreground">Produtos selecionados com rigor para garantir a melhor experiência para nossos clientes.</p>
+            </div>
+
+            <div className="text-center p-8 rounded-xl bg-card shadow-card hover-lift">
+              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-primary">
+                <Users className="text-white" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Agilidade</h3>
+              <p className="text-muted-foreground">Dedicação total em entregas ráidas, agilizando sempre o seu negócio.</p>
+            </div>
+
+            <div className="text-center p-8 rounded-xl bg-card shadow-card hover-lift">
+              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-primary">
+                <Heart className="text-white" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Paixão</h3>
+              <p className="text-muted-foreground">
+                Amor pelo que fazemos, levando sabores que alegram o dia a dia das 
+                pessoas.
+              </p>
             </div>
           </div>
         </div>
