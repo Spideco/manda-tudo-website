@@ -50,17 +50,7 @@ const QuemSomos = () => {
 
           {/* Mission, Vision, Values */}
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-xl bg-muted hover-lift">
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-primary">
-                <Target className="text-white" size={32} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Missão</h3>
-              <p className="text-muted-foreground">
-                Fornecer produtos alimentícios congelados de alta qualidade, garantindo 
-                excelência no atendimento e contribuindo para o sucesso dos nossos parceiros 
-                comerciais.
-              </p>
-            </div>
+            
 
             <div className="p-8 rounded-xl bg-muted hover-lift">
               <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-primary">
