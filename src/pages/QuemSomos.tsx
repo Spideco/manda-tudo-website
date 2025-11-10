@@ -48,15 +48,15 @@ const QuemSomos = () => {
           </h2>
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="section-fade-in">
-              <div className="text-5xl md:text-6xl font-bold mb-2 text-white">5+</div>
-              <div className="text-lg text-white/90">Anos de Experiência</div>
+              <div className="text-5xl md:text-6xl font-bold mb-2 text-white">8+</div>
+              <div className="text-lg text-white/90">Anos no Mercado</div>
             </div>
             <div className="section-fade-in">
               <div className="text-5xl md:text-6xl font-bold mb-2 text-white">300+</div>
               <div className="text-lg text-white/90">Clientes Atendidos</div>
             </div>
             <div className="section-fade-in">
-              <div className="text-5xl md:text-6xl font-bold mb-2 text-white">50+</div>
+              <div className="text-5xl md:text-6xl font-bold mb-2 text-white">120+</div>
               <div className="text-lg text-white/90">Produtos Diferentes</div>
             </div>
             <div className="section-fade-in">
