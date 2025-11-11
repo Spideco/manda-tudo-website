@@ -117,10 +117,7 @@ const Index = () => {
       <section className="py-20 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">Saiba mais</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-secondary-foreground/80">
-            Entre em contato conosco e descubra como podemos ajudar seu negócio a crescer 
-            com os melhores produtos do mercado.
-          </p>
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-secondary-foreground/80">Entre em contato conosco e descubra como podemos ajudar seu negócio a crescer com os melhores produtos do mercado</p>
           <Button asChild variant="hero" size="lg">
             <Link to="/contato">
               Fale Conosco <ArrowRight className="ml-2" />
