@@ -29,7 +29,7 @@ const Contato = () => {
     }
 
     // Create WhatsApp message
-    const whatsappMessage = `Nome: ${formData.name}\n\nTelefone: ${formData.phone}\n\nMensagem: ${formData.message}`;
+    const whatsappMessage = `Olá! Meu nome é ${formData.name}.\n\nTelefone: ${formData.phone}\n\nMensagem: ${formData.message}`;
     const whatsappUrl = `https://wa.me/5512981305757?text=${encodeURIComponent(whatsappMessage)}`;
 
     // Redirect to WhatsApp
@@ -69,7 +69,7 @@ const Contato = () => {
           <div className="max-w-2xl mx-auto">
             {/* Contact Form */}
             <div className="section-fade-in">
-              <h2 className="text-3xl font-bold mb-6 text-foreground text-center">
+              <h2 className="font-bold mb-6 text-foreground text-center text-4xl">
                 Envie sua Mensagem
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
