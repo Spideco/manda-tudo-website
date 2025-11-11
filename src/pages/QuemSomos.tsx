@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Target, Eye, Award, Package, Users, Heart } from "lucide-react";
+import { ArrowRight, Target, Eye, Award, Package, Users, Heart, Star, Quote } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Card, CardContent } from "@/components/ui/card";
 import teamImage from "@/assets/team-photo.jpg";
 const QuemSomos = () => {
   return <div className="min-h-screen">
@@ -67,39 +68,92 @@ const QuemSomos = () => {
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Testimonials Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 md:text-6xl">
-            Nossos Valores
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8 rounded-xl bg-card shadow-card hover-lift">
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-primary">
-                <Package className="text-white" size={32} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Excêlencia</h3>
-              <p className="text-muted-foreground">Produtos selecionados com rigor para garantir a melhor experiência para nossos clientes.</p>
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 md:text-6xl">
+              Relatos de Clientes
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Veja o que nossos clientes dizem sobre nossos produtos e serviços
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <Card className="hover-lift">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                  ))}
+                </div>
+                <Quote className="w-8 h-8 text-primary/20 mb-4" />
+                <p className="text-muted-foreground mb-4">
+                  "Excelente distribuidora! Produtos sempre frescos e de qualidade. O atendimento é nota 10 e as entregas são sempre pontuais. Recomendo muito!"
+                </p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold text-foreground">Carlos Silva</p>
+                  <p className="text-sm text-muted-foreground">Proprietário de Restaurante</p>
+                </div>
+              </CardContent>
+            </Card>
 
-            <div className="text-center p-8 rounded-xl bg-card shadow-card hover-lift">
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-primary">
-                <Users className="text-white" size={32} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Agilidade</h3>
-              <p className="text-muted-foreground">Dedicação total em entregas rápidas, agilizando sempre o seu negócio.</p>
-            </div>
+            <Card className="hover-lift">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                  ))}
+                </div>
+                <Quote className="w-8 h-8 text-primary/20 mb-4" />
+                <p className="text-muted-foreground mb-4">
+                  "Trabalho há anos com o Manda Tudo e sempre tive produtos de primeira qualidade. Os preços são justos e o atendimento é diferenciado. Parabéns!"
+                </p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold text-foreground">Marina Costa</p>
+                  <p className="text-sm text-muted-foreground">Proprietária de Lanchonete</p>
+                </div>
+              </CardContent>
+            </Card>
 
-            <div className="text-center p-8 rounded-xl bg-card shadow-card hover-lift">
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-primary">
-                <Heart className="text-white" size={32} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Paixão</h3>
-              <p className="text-muted-foreground">
-                Amor pelo que fazemos, levando sabores que alegram o dia a dia das 
-                pessoas.
-              </p>
-            </div>
+            <Card className="hover-lift">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                  ))}
+                </div>
+                <Quote className="w-8 h-8 text-primary/20 mb-4" />
+                <p className="text-muted-foreground mb-4">
+                  "Variedade incrível de produtos! Sempre encontro tudo que preciso para meu negócio. Equipe super atenciosa e prestativa. Muito satisfeito!"
+                </p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold text-foreground">Roberto Almeida</p>
+                  <p className="text-sm text-muted-foreground">Comerciante</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <p className="text-muted-foreground mb-6">
+              <span className="text-2xl font-bold text-foreground">5.0</span> estrelas • 43 avaliações no Google
+            </p>
+            <Button 
+              asChild 
+              size="lg"
+              className="h-12 px-8"
+            >
+              <a 
+                href="https://www.google.com/search?q=manda+tudo+taubate" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Ver Todas as Avaliações
+                <ArrowRight className="ml-2" />
+              </a>
+            </Button>
           </div>
         </div>
       </section>
