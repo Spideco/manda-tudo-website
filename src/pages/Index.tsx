@@ -32,7 +32,7 @@ const Index = () => {
       </section>
 
       {/* About Preview */}
-      <section className="py-20 bg-muted">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="section-fade-in">
