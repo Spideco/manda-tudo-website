@@ -20,7 +20,7 @@ const Index = () => {
           <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">
             Manda Tudo Distribuidora
           </h1>
-          <p className="hero-subtitle md:text-2xl mb-8 max-w-2xl mx-auto text-xl">Distribuindo sabores extraordinários para momentos extraordinários</p>
+          <p className="hero-subtitle md:text-2xl mb-8 max-w-2xl mx-auto text-xl font-bold">Distribuindo sabores extraordinários para momentos extraordinários</p>
           <div className="hero-cta">
             <Button asChild variant="hero" size="lg">
               <Link to="/quem-somos">
