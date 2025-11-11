@@ -14,9 +14,7 @@ const NossaHistoria = () => {
           <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6 text-white">
             Nossa História
           </h1>
-          <p className="hero-subtitle text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-            A jornada de paixão, dedicação e compromisso que construiu a Manda Tudo
-          </p>
+          <p className="hero-subtitle text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">Uma jornada de paixão, dedicação e compromisso.</p>
         </div>
       </section>
 
