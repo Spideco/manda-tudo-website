@@ -80,11 +80,8 @@ const NossaHistoria = () => {
                 <span className="text-2xl font-bold text-white">01</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">A Fundação</h3>
-                <p className="text-lg text-muted-foreground">
-                  Início das operações com uma pequena equipe dedicada e os primeiros clientes 
-                  que acreditaram no projeto. Foco total em construir relações de confiança.
-                </p>
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Fundação</h3>
+                <p className="text-lg text-muted-foreground">Iníciamos nossas operações em 2017 com uma pequena equipe dedicada e os primeiros clientes que acreditaram no projeto, com foco total em construir relações de confiança.</p>
               </div>
             </div>
 
@@ -93,11 +90,8 @@ const NossaHistoria = () => {
                 <span className="text-2xl font-bold text-white">02</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">Expansão Regional</h3>
-                <p className="text-lg text-muted-foreground">
-                  Crescimento da carteira de clientes e ampliação do portfólio de produtos. 
-                  A Manda Tudo começa a se tornar referência na região.
-                </p>
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Expansão</h3>
+                <p className="text-lg text-muted-foreground">Com uma base inicial forte, expandimos nossa operação na cidade de Taubaté abrindo a 2º unidade do Manda Tudo. Com isso, captamos mais clientes e aumentamos nossa influência e presença de mercado na região.</p>
               </div>
             </div>
 
@@ -107,10 +101,7 @@ const NossaHistoria = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-3 text-foreground">Consolidação</h3>
-                <p className="text-lg text-muted-foreground">
-                  Modernização da estrutura logística e ampliação da equipe. Centenas de 
-                  clientes satisfeitos e reconhecimento no mercado.
-                </p>
+                <p className="text-lg text-muted-foreground">Modernizamos nossa estrutura logística e ampliamos nossa equipe. Agora, atendemos diversas cidades pelo Vale do Paraíba, com uma vasta variedade de produtos e com atendimentos ainda melhores e mais eficientes.</p>
               </div>
             </div>
 
@@ -119,11 +110,8 @@ const NossaHistoria = () => {
                 <span className="text-2xl font-bold text-white">04</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">O Futuro</h3>
-                <p className="text-lg text-muted-foreground">
-                  Novos planos de expansão, diversificação de produtos e o compromisso contínuo 
-                  em oferecer sempre o melhor para nossos parceiros.
-                </p>
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Futuro</h3>
+                <p className="text-lg text-muted-foreground">Novos planos de expansão, diversificação de produtos e o compromisso contínuo em oferecer sempre o melhor para nossos parceiros.</p>
               </div>
             </div>
           </div>
