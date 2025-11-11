@@ -111,70 +111,14 @@ const Contato = () => {
             {/* Contact Info */}
             <div className="section-fade-in space-y-8">
               <div>
-                <h2 className="text-3xl font-bold mb-6 text-foreground">
-                  Informações de Contato
-                </h2>
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center">
-                      <MapPin className="text-white" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg mb-1 text-foreground">Endereço</h3>
-                      <p className="text-muted-foreground">
-                        Rua Exemplo, 123 - Centro<br />
-                        São Paulo, SP - CEP 01000-000
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center">
-                      <Phone className="text-white" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg mb-1 text-foreground">Telefone</h3>
-                      <p className="text-muted-foreground">(11) 1234-5678</p>
-                      <p className="text-muted-foreground">(11) 98765-4321</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center">
-                      <Mail className="text-white" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg mb-1 text-foreground">E-mail</h3>
-                      <p className="text-muted-foreground">contato@mandatudo.com.br</p>
-                      <p className="text-muted-foreground">vendas@mandatudo.com.br</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center">
-                      <Clock className="text-white" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg mb-1 text-foreground">Horário</h3>
-                      <p className="text-muted-foreground">Segunda a Sexta: 8h às 18h</p>
-                      <p className="text-muted-foreground">Sábado: 8h às 12h</p>
-                    </div>
-                  </div>
-                </div>
+                
+                
               </div>
 
               {/* Social Media */}
               <div>
-                <h3 className="text-xl font-bold mb-4 text-foreground">Redes Sociais</h3>
-                <div className="flex space-x-4">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center hover-glow transition-all" aria-label="Instagram">
-                    <Instagram className="text-white" size={24} />
-                  </a>
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center hover-glow transition-all" aria-label="Facebook">
-                    <Facebook className="text-white" size={24} />
-                  </a>
-                  
-                </div>
+                
+                
               </div>
             </div>
           </div>
