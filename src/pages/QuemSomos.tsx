@@ -146,7 +146,7 @@ const QuemSomos = () => {
               className="h-12 px-8"
             >
               <a 
-                href="https://www.google.com/search?q=manda+tudo+taubate" 
+                href="https://www.google.com/search?sca_esv=c019091b52478373&hl=pt-BR&q=MANDA+TUDO+-+ATENDEMOS+ATACADO+E+VAREJO+Taubat%C3%A9&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EzTkZZINuhDvtES8ipn5WuENO9BVy1ADHgg_KBR-xO9pEJtfiRVhcYnv9AJm3koXDE6vxzFLMX24x_gBRu1GOpCCu12ykGU_w_zgwmJ1tcLuBk_8eb7wT311Eq1Jk7Fjohl2tQg%3D&sa=X&ved=2ahUKEwj_keefouqQAxUoJ7kGHZsGIaIQrrQLegQIIBAA&biw=1745&bih=835&dpr=1.1" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
