@@ -12,7 +12,6 @@ const Contato = () => {
   } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     phone: "",
     message: ""
   });
@@ -20,7 +19,7 @@ const Contato = () => {
     e.preventDefault();
 
     // Basic validation
-    if (!formData.name || !formData.email || !formData.message) {
+    if (!formData.name || !formData.phone || !formData.message) {
       toast({
         title: "Campos obrigatórios",
         description: "Por favor, preencha todos os campos obrigatórios.",
@@ -38,7 +37,6 @@ const Contato = () => {
     // Reset form
     setFormData({
       name: "",
-      email: "",
       phone: "",
       message: ""
     });
@@ -67,32 +65,25 @@ const Contato = () => {
       {/* Contact Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="max-w-2xl mx-auto">
             {/* Contact Form */}
             <div className="section-fade-in">
-              <h2 className="text-3xl font-bold mb-6 text-foreground">
+              <h2 className="text-3xl font-bold mb-6 text-foreground text-center">
                 Envie sua Mensagem
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
-                    Nome Completo *
+                    Nome *
                   </label>
                   <Input id="name" name="name" type="text" value={formData.name} onChange={handleChange} placeholder="Seu nome" required />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
-                    E-mail *
-                  </label>
-                  <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} placeholder="seu@email.com" required />
-                </div>
-
-                <div>
                   <label htmlFor="phone" className="block text-sm font-medium mb-2 text-foreground">
-                    Telefone
+                    Telefone *
                   </label>
-                  <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="(11) 12345-6789" />
+                  <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="(11) 12345-6789" required />
                 </div>
 
                 <div>
@@ -106,20 +97,6 @@ const Contato = () => {
                   Enviar Mensagem
                 </Button>
               </form>
-            </div>
-
-            {/* Contact Info */}
-            <div className="section-fade-in space-y-8">
-              <div>
-                
-                
-              </div>
-
-              {/* Social Media */}
-              <div>
-                
-                
-              </div>
             </div>
           </div>
         </div>
