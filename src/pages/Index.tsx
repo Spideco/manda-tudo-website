@@ -4,7 +4,7 @@ import { ArrowRight, Package, Users, Heart } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-warehouse.jpg";
-import teamImage from "@/assets/team-photo.jpg";
+import storeSign from "@/assets/store-sign.jpg";
 import catalogoImage from "@/assets/catalogo-preview.jpg";
 const Index = () => {
   return <div className="min-h-screen">
@@ -48,7 +48,7 @@ const Index = () => {
               </Button>
             </div>
             <div className="section-fade-in hover-lift rounded-2xl overflow-hidden shadow-card">
-              <img src={teamImage} alt="Equipe Manda Tudo" className="w-full h-auto" />
+              <img src={storeSign} alt="Manda Tudo Atacado e Varejo" className="w-full h-auto" />
             </div>
           </div>
         </div>
