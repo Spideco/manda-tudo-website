@@ -45,16 +45,10 @@ const NossaHistoria = () => {
                 A Visão de Uma Empreendedora
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Tudo começou com um sonho: criar uma distribuidora que não apenas entregasse 
-                produtos, mas que construísse relações verdadeiras com seus clientes. Com 
-                experiência no setor alimentício e uma visão clara do que o mercado precisava, 
-                nossa fundadora deu o primeiro passo para transformar esse sonho em realidade.
+                Tudo começou com um sonho: criar uma distribuidora que não apenas entregasse produtos, mas que construísse relações verdadeiras com seus clientes. Com experiência no setor alimentício e uma visão clara do que o mercado precisava, a empresária Amanda Souza deu o primeiro passo para transformar esse sonho em realidade.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Os primeiros anos foram desafiadores, mas cada obstáculo foi encarado como 
-                uma oportunidade de crescimento. Com determinação e trabalho árduo, a Manda 
-                Tudo conquistou a confiança de seus primeiros clientes e, aos poucos, expandiu 
-                sua atuação.
+                Os primeiros anos foram desafiadores, mas cada obstáculo foi encarado como uma oportunidade de crescimento. Com determinação e trabalho árduo, O Manda Tudo conquistou a confiança de seus primeiros clientes e, aos poucos, expandiu sua atuação.
               </p>
               <p className="text-lg text-muted-foreground">
                 Hoje, anos depois, a empresa mantém os mesmos valores que a fundaram: 
