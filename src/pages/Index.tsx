@@ -17,7 +17,7 @@ const Index = () => {
       backgroundPosition: "center"
     }}>
         <div className="container mx-auto px-4 text-center text-white">
-          <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">Distribuidora Manda Tudo    </h1>
+          <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">Distribuidora Manda Tudo</h1>
           <p className="hero-subtitle md:text-2xl mb-8 max-w-2xl mx-auto text-xl font-bold">
             Distribuindo sabores extraordinários para momentos extraordinários
           </p>
