@@ -7,21 +7,17 @@ import heroImage from "@/assets/hero-warehouse.jpg";
 import storeSign from "@/assets/store-sign.jpg";
 import catalogoImage from "@/assets/catalogo-preview.jpg";
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
 
       {/* Hero Section */}
-      <section
-        className="relative h-screen flex items-center justify-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <section className="relative h-screen flex items-center justify-center" style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center"
+    }}>
         <div className="container mx-auto px-4 text-center text-white">
-          <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">Manda Tudo Distribuidora</h1>
+          <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">Distribuidora Manda Tudo    </h1>
           <p className="hero-subtitle md:text-2xl mb-8 max-w-2xl mx-auto text-xl font-bold">
             Distribuindo sabores extraordinários para momentos extraordinários
           </p>
@@ -107,19 +103,11 @@ const Index = () => {
           </p>
 
           <div className="max-w-4xl mx-auto mb-8">
-            <img
-              src={catalogoImage}
-              alt="Catálogo de Produtos Manda Tudo 2025"
-              className="w-full h-auto rounded-2xl shadow-card hover-lift"
-            />
+            <img src={catalogoImage} alt="Catálogo de Produtos Manda Tudo 2025" className="w-full h-auto rounded-2xl shadow-card hover-lift" />
           </div>
 
           <Button asChild variant="secondary" size="lg" className="h-14 px-12 text-lg">
-            <a
-              href="https://mandaofertas.my.canva.site/catalogo-manda-tudo-2025"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://mandaofertas.my.canva.site/catalogo-manda-tudo-2025" target="_blank" rel="noopener noreferrer">
               Ver catálogo completo <ArrowRight className="ml-2" />
             </a>
           </Button>
@@ -143,7 +131,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
 export default Index;
