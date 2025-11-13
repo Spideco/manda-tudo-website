@@ -21,7 +21,7 @@ const Index = () => {
           <p className="hero-subtitle md:text-2xl mb-8 max-w-2xl mx-auto text-xl font-bold">
             Distribuindo sabores extraordinários para momentos extraordinários
           </p>
-          <div className="hero-cta">
+          <div className="hero-cta px-0 text-center font-sans">
             <Button asChild variant="hero" size="lg">
               <Link to="/quem-somos">
                 Quem somos <ArrowRight className="ml-2" />
