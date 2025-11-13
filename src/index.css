@@ -14,16 +14,16 @@ All colors MUST be HSL.
     --background: 0 0% 100%;
     --foreground: 0 0% 10%;
 
-    /* Orange primary - #f2882c */
-    --primary: 28 90% 56%;
+    /* Orange primary - #F2801F */
+    --primary: 28 89% 54%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 28 90% 65%;
-    --primary-dark: 28 90% 45%;
+    --primary-light: 28 89% 64%;
+    --primary-dark: 28 89% 44%;
 
     /* Accent color */
-    --accent: 28 90% 56%;
+    --accent: 28 89% 54%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 28 90% 65%;
+    --accent-light: 28 89% 64%;
 
     /* Black for contrast */
     --secondary: 0 0% 10%;
@@ -41,7 +41,7 @@ All colors MUST be HSL.
 
     --border: 28 30% 90%;
     --input: 28 30% 90%;
-    --ring: 28 90% 56%;
+    --ring: 28 89% 54%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
@@ -49,12 +49,12 @@ All colors MUST be HSL.
     --radius: 1rem;
 
     /* Gradients - replaced with solid orange */
-    --gradient-primary: hsl(28, 90%, 56%);
-    --gradient-hero: hsl(28, 90%, 56%);
+    --gradient-primary: hsl(28, 89%, 54%);
+    --gradient-hero: hsl(28, 89%, 54%);
     --gradient-overlay: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
 
     /* Shadows */
-    --shadow-primary: 0 10px 40px -10px hsl(28 90% 56% / 0.3);
+    --shadow-primary: 0 10px 40px -10px hsl(28 89% 54% / 0.3);
     --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.1);
 
     /* Animations */

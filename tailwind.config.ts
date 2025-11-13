@@ -56,8 +56,8 @@ export default {
         },
       },
       backgroundImage: {
-        "gradient-primary": "linear-gradient(135deg, hsl(28, 90%, 56%), hsl(28, 90%, 56%))",
-        "gradient-hero": "linear-gradient(135deg, hsl(28, 90%, 56%), hsl(28, 90%, 56%))",
+        "gradient-primary": "linear-gradient(135deg, hsl(28, 89%, 54%), hsl(28, 89%, 54%))",
+        "gradient-hero": "linear-gradient(135deg, hsl(28, 89%, 54%), hsl(28, 89%, 54%))",
         "gradient-overlay": "var(--gradient-overlay)",
       },
       boxShadow: {
