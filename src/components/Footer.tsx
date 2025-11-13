@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="px-[64px]">
             <h4 className="font-bold text-lg mb-4 text-primary">Links</h4>
             <nav className="space-y-2">
               <Link to="/" className="block text-secondary-foreground/80 hover:text-primary transition-colors">
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="px-[64px]">
             <h4 className="font-bold text-lg mb-4 text-primary">Contato</h4>
             <div className="space-y-3 text-secondary-foreground/80">
               <div className="flex items-center space-x-3">
