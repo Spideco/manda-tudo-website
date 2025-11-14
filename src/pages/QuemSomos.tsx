@@ -4,7 +4,7 @@ import { ArrowRight, Target, Eye, Award, Package, Users, Heart, Star, Quote } fr
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import teamImage from "@/assets/team-photo.jpg";
+import officeImage from "@/assets/office-photo.jpg";
 const QuemSomos = () => {
   return <div className="min-h-screen">
       <Header />
@@ -32,7 +32,7 @@ const QuemSomos = () => {
               <p className="text-lg text-muted-foreground">Cada entrega é feita com cuidado, esmero e dedicação, pois sabemos que nosso sucesso está diretamente ligado ao sucesso dos nossos clientes.</p>
             </div>
             <div className="section-fade-in hover-lift rounded-2xl overflow-hidden shadow-card">
-              <img src={teamImage} alt="Equipe Manda Tudo" className="w-full h-auto" />
+              <img src={officeImage} alt="Escritório Manda Tudo" className="w-full h-auto" />
             </div>
           </div>
 
