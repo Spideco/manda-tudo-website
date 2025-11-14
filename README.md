@@ -1,73 +1,131 @@
-# Welcome to your Lovable project
+# Manda Tudo - Website Institucional
 
-## Project info
+Site institucional da **Manda Tudo**, empresa estabelecida em Taubaté-SP com duas unidades de atendimento.
 
-**URL**: https://lovable.dev/projects/17f317f4-6bab-40e3-b1f6-3fb0621a909e
+## 🎯 Sobre o Projeto
 
-## How can I edit this code?
+Este é o website oficial da Manda Tudo, desenvolvido para apresentar a empresa, sua história, valores e facilitar o contato com clientes através de um formulário integrado com WhatsApp.
 
-There are several ways of editing your application.
+## ✨ Funcionalidades
 
-**Use Lovable**
+- **Página Inicial**: Apresentação da empresa com design moderno e responsivo
+- **Nossa História**: Timeline com a trajetória da empresa
+- **Quem Somos**: Informações sobre missão, visão e valores
+- **Contato**: 
+  - Formulário de contato integrado com WhatsApp
+  - Mapas interativos das duas unidades
+  - Links diretos para Google Maps
+  - Informações de contato e redes sociais
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/17f317f4-6bab-40e3-b1f6-3fb0621a909e) and start prompting.
+## 🚀 Tecnologias
 
-Changes made via Lovable will be committed automatically to this repo.
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-**Use your preferred IDE**
+- [React](https://reactjs.org/) - Biblioteca JavaScript para interfaces
+- [TypeScript](https://www.typescriptlang.org/) - Superset tipado de JavaScript
+- [Vite](https://vitejs.dev/) - Build tool e dev server ultrarrápido
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário
+- [shadcn/ui](https://ui.shadcn.com/) - Componentes React reutilizáveis
+- [React Router](https://reactrouter.com/) - Navegação entre páginas
+- [Lucide React](https://lucide.dev/) - Biblioteca de ícones
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Instalação
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Pré-requisitos
 
-Follow these steps:
+- Node.js (versão 18 ou superior)
+- npm ou yarn
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Passos para instalação
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. Clone o repositório:
+```bash
+git clone <URL_DO_REPOSITORIO>
+cd <NOME_DO_PROJETO>
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. Instale as dependências:
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Inicie o servidor de desenvolvimento:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Acesse no navegador:
+```
+http://localhost:5173
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Estrutura do Projeto
 
-**Use GitHub Codespaces**
+```
+src/
+├── assets/              # Imagens e recursos estáticos
+├── components/          # Componentes reutilizáveis
+│   ├── ui/             # Componentes da biblioteca shadcn/ui
+│   ├── Header.tsx      # Cabeçalho do site
+│   ├── Footer.tsx      # Rodapé do site
+│   └── NavLink.tsx     # Links de navegação
+├── hooks/              # Hooks customizados
+├── lib/                # Utilitários e configurações
+├── pages/              # Páginas da aplicação
+│   ├── Index.tsx       # Página inicial
+│   ├── NossaHistoria.tsx
+│   ├── QuemSomos.tsx
+│   ├── Contato.tsx
+│   └── NotFound.tsx
+├── App.tsx             # Componente principal
+├── main.tsx            # Ponto de entrada
+└── index.css           # Estilos globais e design system
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Design System
 
-## What technologies are used for this project?
+O projeto utiliza um design system customizado baseado em:
+- **Cores**: Paleta com laranja primário (#F2801F) e variações
+- **Tipografia**: Sistema de fontes responsivo
+- **Componentes**: Biblioteca shadcn/ui customizada
+- **Animações**: Transições suaves e efeitos visuais
 
-This project is built with:
+Todas as cores e estilos são gerenciados através de variáveis CSS no arquivo `src/index.css` e configurações do Tailwind em `tailwind.config.ts`.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📜 Scripts Disponíveis
 
-## How can I deploy this project?
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Cria build de produção
+- `npm run preview` - Preview do build de produção
+- `npm run lint` - Executa o linter
 
-Simply open [Lovable](https://lovable.dev/projects/17f317f4-6bab-40e3-b1f6-3fb0621a909e) and click on Share -> Publish.
+## 📍 Nossas Unidades
 
-## Can I connect a custom domain to my Lovable project?
+### Loja 1 - Santa Luzia
+Rua Bom Jardim, 139 - Santa Luzia  
+Taubaté - SP
 
-Yes, you can!
+### Loja 2 - Centro
+Rua Coronel João Afonso, 36 - Centro  
+Taubaté - SP
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📞 Contato
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- **WhatsApp**: (12) 98130-5757
+- **Website**: [mandatudo.com.br](https://mandatudo.com.br)
+
+## 🤝 Como Contribuir
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona MinhaFeature'`)
+4. Push para a branch (`git push origin feature/MinhaFeature`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto é propriedade da **Manda Tudo**. Todos os direitos reservados.
+
+---
+
+Desenvolvido com ❤️ pela equipe Manda Tudo
