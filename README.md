@@ -30,7 +30,7 @@ Taubaté - SP
 ## 📞 Contato
 
 - **WhatsApp**: (12) 98130-5757
-- **Website**: [mandatudo.com.br](https://mandatudo.com.br)
+- **Website**: https://www.distribuidoramandatudo.com.br/
 
 ## 📄 Licença
 
