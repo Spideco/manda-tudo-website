@@ -90,7 +90,10 @@ const Contato = () => {
                   <label htmlFor="customerType" className="block text-sm font-medium mb-2 text-foreground">
                     Selecione o seu tipo de cliente *
                   </label>
-                  <Select value={formData.customerType} onValueChange={(value) => setFormData({ ...formData, customerType: value })}>
+                  <Select value={formData.customerType} onValueChange={value => setFormData({
+                  ...formData,
+                  customerType: value
+                })}>
                     <SelectTrigger id="customerType" className="w-full">
                       <SelectValue placeholder="Escolha uma opção" />
                     </SelectTrigger>
@@ -102,10 +105,8 @@ const Contato = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
-                    Mensagem *
-                  </label>
-                  <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Como podemos ajudar?" rows={6} required />
+                  
+                  
                 </div>
 
                 <Button type="submit" variant="hero" size="lg" className="w-full">
