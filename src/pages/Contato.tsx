@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Linkedin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
@@ -13,13 +14,14 @@ const Contato = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
+    customerType: "",
     message: ""
   });
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     // Basic validation
-    if (!formData.name || !formData.phone || !formData.message) {
+    if (!formData.name || !formData.phone || !formData.customerType || !formData.message) {
       toast({
         title: "Campos obrigatórios",
         description: "Por favor, preencha todos os campos obrigatórios.",
@@ -29,7 +31,7 @@ const Contato = () => {
     }
 
     // Create WhatsApp message
-    const whatsappMessage = `Olá, me chamo ${formData.name}\n${formData.message}`;
+    const whatsappMessage = `Olá, me chamo ${formData.name} e sou cliente ${formData.customerType}, vim pelo site e gostaria de saber mais sobre os produtos!`;
     const whatsappUrl = `https://wa.me/5512981305757?text=${encodeURIComponent(whatsappMessage)}`;
 
     // Redirect to WhatsApp
@@ -39,6 +41,7 @@ const Contato = () => {
     setFormData({
       name: "",
       phone: "",
+      customerType: "",
       message: ""
     });
   };
@@ -81,6 +84,21 @@ const Contato = () => {
                     Telefone *
                   </label>
                   <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="(11) 12345-6789" required />
+                </div>
+
+                <div>
+                  <label htmlFor="customerType" className="block text-sm font-medium mb-2 text-foreground">
+                    Selecione o seu tipo de cliente *
+                  </label>
+                  <Select value={formData.customerType} onValueChange={(value) => setFormData({ ...formData, customerType: value })}>
+                    <SelectTrigger id="customerType" className="w-full">
+                      <SelectValue placeholder="Escolha uma opção" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="varejo">Varejo</SelectItem>
+                      <SelectItem value="atacado">Atacado</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
 
                 <div>
