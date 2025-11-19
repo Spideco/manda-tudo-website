@@ -31,6 +31,17 @@ const Contato = () => {
       return;
     }
 
+    // Phone validation - remove non-numeric characters and check length
+    const phoneDigits = formData.phone.replace(/\D/g, '');
+    if (phoneDigits.length < 10 || phoneDigits.length > 11) {
+      toast({
+        title: "Telefone inválido",
+        description: "Por favor, insira um telefone válido com DDD (mínimo 10 dígitos).",
+        variant: "destructive"
+      });
+      return;
+    }
+
     // Additional validation for atacado
     if (formData.customerType === "atacado" && !formData.businessType) {
       toast({
