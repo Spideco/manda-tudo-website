@@ -143,7 +143,7 @@ const Contato = () => {
 
                 <div>
                   <label htmlFor="customerType" className="block text-sm font-medium mb-2 text-foreground">
-                    Selecione o tipo de atendimen *
+                    Selecione o tipo de atendimento *
                   </label>
                   <Select value={formData.customerType} onValueChange={value => setFormData({
                   ...formData,
