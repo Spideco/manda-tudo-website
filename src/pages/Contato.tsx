@@ -15,13 +15,14 @@ const Contato = () => {
     name: "",
     phone: "",
     customerType: "",
+    businessType: "",
     message: ""
   });
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     // Basic validation
-    if (!formData.name || !formData.phone || !formData.customerType || !formData.message) {
+    if (!formData.name || !formData.phone || !formData.customerType) {
       toast({
         title: "Campos obrigatórios",
         description: "Por favor, preencha todos os campos obrigatórios.",
@@ -30,8 +31,24 @@ const Contato = () => {
       return;
     }
 
-    // Create WhatsApp message
-    const whatsappMessage = `Olá, me chamo ${formData.name} e sou cliente ${formData.customerType}, vim pelo site e gostaria de saber mais sobre os produtos!`;
+    // Additional validation for atacado
+    if (formData.customerType === "atacado" && !formData.businessType) {
+      toast({
+        title: "Campos obrigatórios",
+        description: "Por favor, selecione o tipo do seu negócio.",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    // Create WhatsApp message based on customer type
+    let whatsappMessage = "";
+    if (formData.customerType === "atacado") {
+      whatsappMessage = `Olá, me chamo ${formData.name} e sou cliente ${formData.customerType} e tenho um(a) ${formData.businessType}, vim pelo site e gostaria de saber mais sobre os produtos!`;
+    } else {
+      whatsappMessage = `Olá, me chamo ${formData.name} e sou cliente ${formData.customerType}, vim pelo site e gostaria de saber mais sobre os produtos!`;
+    }
+    
     const whatsappUrl = `https://wa.me/5512981305757?text=${encodeURIComponent(whatsappMessage)}`;
 
     // Redirect to WhatsApp
@@ -42,6 +59,7 @@ const Contato = () => {
       name: "",
       phone: "",
       customerType: "",
+      businessType: "",
       message: ""
     });
   };
@@ -92,7 +110,8 @@ const Contato = () => {
                   </label>
                   <Select value={formData.customerType} onValueChange={value => setFormData({
                   ...formData,
-                  customerType: value
+                  customerType: value,
+                  businessType: value === "varejo" ? "" : formData.businessType
                 })}>
                     <SelectTrigger id="customerType" className="w-full">
                       <SelectValue placeholder="Escolha uma opção" />
@@ -104,10 +123,33 @@ const Contato = () => {
                   </Select>
                 </div>
 
-                <div>
-                  
-                  
-                </div>
+                {formData.customerType === "atacado" && (
+                  <div>
+                    <label htmlFor="businessType" className="block text-sm font-medium mb-2 text-foreground">
+                      Selecione o tipo do seu negócio *
+                    </label>
+                    <Select value={formData.businessType} onValueChange={value => setFormData({
+                    ...formData,
+                    businessType: value
+                  })}>
+                      <SelectTrigger id="businessType" className="w-full">
+                        <SelectValue placeholder="Escolha uma opção" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="Açaí / Sorveteria">Açaí / Sorveteria</SelectItem>
+                        <SelectItem value="Bar / Pub">Bar / Pub</SelectItem>
+                        <SelectItem value="Restaurante">Restaurante</SelectItem>
+                        <SelectItem value="Pizzaria">Pizzaria</SelectItem>
+                        <SelectItem value="Pastelaria">Pastelaria</SelectItem>
+                        <SelectItem value="Doceria">Doceria</SelectItem>
+                        <SelectItem value="Salgaderia">Salgaderia</SelectItem>
+                        <SelectItem value="Esfiharia">Esfiharia</SelectItem>
+                        <SelectItem value="Hamburgueria">Hamburgueria</SelectItem>
+                        <SelectItem value="Cafeteria">Cafeteria</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                )}
 
                 <Button type="submit" variant="hero" size="lg" className="w-full">
                   Enviar Mensagem
