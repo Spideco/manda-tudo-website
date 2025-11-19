@@ -59,7 +59,6 @@ const Contato = () => {
     } else {
       whatsappMessage = `Olá, me chamo ${formData.name} e sou cliente ${formData.customerType}, vim pelo site e gostaria de saber mais sobre os produtos!`;
     }
-    
     const whatsappUrl = `https://wa.me/5512981305757?text=${encodeURIComponent(whatsappMessage)}`;
 
     // Redirect to WhatsApp
@@ -75,13 +74,16 @@ const Contato = () => {
     });
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    
+    const {
+      name,
+      value
+    } = e.target;
+
     // Apply phone mask for phone field
     if (name === "phone") {
       // Remove all non-numeric characters
       const numbers = value.replace(/\D/g, '');
-      
+
       // Apply mask based on length
       let formattedPhone = numbers;
       if (numbers.length <= 2) {
@@ -93,7 +95,6 @@ const Contato = () => {
       } else {
         formattedPhone = `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7, 11)}`;
       }
-      
       setFormData({
         ...formData,
         [name]: formattedPhone
@@ -142,7 +143,7 @@ const Contato = () => {
 
                 <div>
                   <label htmlFor="customerType" className="block text-sm font-medium mb-2 text-foreground">
-                    Selecione o seu tipo de cliente *
+                    Selecione o tipo de atendimen *
                   </label>
                   <Select value={formData.customerType} onValueChange={value => setFormData({
                   ...formData,
@@ -159,15 +160,14 @@ const Contato = () => {
                   </Select>
                 </div>
 
-                {formData.customerType === "atacado" && (
-                  <div>
+                {formData.customerType === "atacado" && <div>
                     <label htmlFor="businessType" className="block text-sm font-medium mb-2 text-foreground">
                       Selecione o tipo do seu negócio *
                     </label>
                     <Select value={formData.businessType} onValueChange={value => setFormData({
-                    ...formData,
-                    businessType: value
-                  })}>
+                  ...formData,
+                  businessType: value
+                })}>
                       <SelectTrigger id="businessType" className="w-full">
                         <SelectValue placeholder="Escolha uma opção" />
                       </SelectTrigger>
@@ -184,8 +184,7 @@ const Contato = () => {
                         <SelectItem value="Cafeteria">Cafeteria</SelectItem>
                       </SelectContent>
                     </Select>
-                  </div>
-                )}
+                  </div>}
 
                 <Button type="submit" variant="hero" size="lg" className="w-full">
                   Enviar Mensagem
