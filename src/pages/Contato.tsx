@@ -75,10 +75,35 @@ const Contato = () => {
     });
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    const { name, value } = e.target;
+    
+    // Apply phone mask for phone field
+    if (name === "phone") {
+      // Remove all non-numeric characters
+      const numbers = value.replace(/\D/g, '');
+      
+      // Apply mask based on length
+      let formattedPhone = numbers;
+      if (numbers.length <= 2) {
+        formattedPhone = numbers;
+      } else if (numbers.length <= 7) {
+        formattedPhone = `(${numbers.slice(0, 2)}) ${numbers.slice(2)}`;
+      } else if (numbers.length <= 10) {
+        formattedPhone = `(${numbers.slice(0, 2)}) ${numbers.slice(2, 6)}-${numbers.slice(6)}`;
+      } else {
+        formattedPhone = `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7, 11)}`;
+      }
+      
+      setFormData({
+        ...formData,
+        [name]: formattedPhone
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    }
   };
   return <div className="min-h-screen">
       <Header />
