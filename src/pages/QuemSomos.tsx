@@ -53,11 +53,11 @@ const QuemSomos = () => {
               <div className="text-lg text-white/90">Anos no Mercado</div>
             </div>
             <div className="section-fade-in">
-              <div className="text-5xl md:text-6xl font-bold mb-2 text-white">+300</div>
+              <div className="text-5xl md:text-6xl font-bold mb-2 text-white">+1500</div>
               <div className="text-lg text-white/90">Clientes Atendidos</div>
             </div>
             <div className="section-fade-in">
-              <div className="text-5xl md:text-6xl font-bold mb-2 text-white">+250</div>
+              <div className="text-5xl md:text-6xl font-bold mb-2 text-white">+500</div>
               <div className="text-lg text-white/90">Produtos Diferentes</div>
             </div>
             <div className="section-fade-in">
@@ -84,9 +84,7 @@ const QuemSomos = () => {
             <Card className="hover-lift">
               <CardContent className="p-6">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
                 </div>
                 <Quote className="w-8 h-8 text-primary/20 mb-4" />
                 <p className="text-muted-foreground mb-4">
@@ -102,9 +100,7 @@ const QuemSomos = () => {
             <Card className="hover-lift">
               <CardContent className="p-6">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
                 </div>
                 <Quote className="w-8 h-8 text-primary/20 mb-4" />
                 <p className="text-muted-foreground mb-4">
@@ -120,9 +116,7 @@ const QuemSomos = () => {
             <Card className="hover-lift">
               <CardContent className="p-6">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
                 </div>
                 <Quote className="w-8 h-8 text-primary/20 mb-4" />
                 <p className="text-muted-foreground mb-4">
@@ -140,16 +134,8 @@ const QuemSomos = () => {
             <p className="text-muted-foreground mb-6">
               <span className="text-2xl font-bold text-foreground">5.0</span> estrelas • 43 avaliações no Google
             </p>
-            <Button 
-              asChild 
-              size="lg"
-              className="h-12 px-8"
-            >
-              <a 
-                href="https://www.google.com/search?q=manda+tudo+taubate" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+            <Button asChild size="lg" className="h-12 px-8">
+              <a href="https://www.google.com/search?q=manda+tudo+taubate" target="_blank" rel="noopener noreferrer">
                 Ver Todas as Avaliações
                 <ArrowRight className="ml-2" />
               </a>
