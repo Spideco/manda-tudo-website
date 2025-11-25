@@ -129,7 +129,7 @@ const Index = () => {
               <h2 className="text-5xl font-bold mb-6 md:text-5xl">
                 Comunidade de Ofertas
               </h2>
-              <p className="text-2xl md:text-3xl mb-12 leading-relaxed font-semibold">
+              <p className="text-2xl md:text-3xl mb-12 leading-relaxed font-normal">
                 Clique no link ao lado para fazer parte da nossa comunidade de ofertas, o Manda Ofertas.
                 Por lá você ficará sabendo de todas as nossas promoções todos os dias!
               </p>
