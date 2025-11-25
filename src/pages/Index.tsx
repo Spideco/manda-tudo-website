@@ -121,10 +121,8 @@ const Index = () => {
     }}>
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <div className="w-64 h-64 md:w-80 md:h-80 bg-black rounded-3xl flex items-center justify-center">
-                <img src={mandaOfertasLogo} alt="Manda Ofertas" className="w-48 h-48 object-contain" />
-              </div>
+            <div className="flex justify-center items-center">
+              <img src={mandaOfertasLogo} alt="Manda Ofertas" className="w-80 h-80 md:w-96 md:h-96 object-contain" />
             </div>
             
             <div className="text-white">
