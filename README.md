@@ -1,10 +1,10 @@
 # Manda Tudo - Website Institucional
 
-Site institucional da **Manda Tudo**, empresa estabelecida em Taubaté-SP com duas unidades de atendimento.
+Site institucional do **Manda Tudo**, empresa estabelecida em Taubaté-SP com duas unidades de atendimento.
 
 ## 🎯 Sobre o Projeto
 
-Este é o website oficial da Manda Tudo, desenvolvido para apresentar a empresa, sua história, valores e facilitar o contato com clientes através de um formulário integrado com WhatsApp.
+Este é o website oficial do Manda Tudo, desenvolvido para apresentar a empresa, sua história, valores e facilitar o contato com clientes.
 
 ## ✨ Funcionalidades
 
