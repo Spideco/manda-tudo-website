@@ -135,9 +135,9 @@ const Index = () => {
               </p>
               
               <div className="flex items-center gap-8">
-                <Button asChild size="lg" className="bg-black hover:bg-black/90 text-white text-xl px-8 py-6 h-auto rounded-full">
+                <Button asChild variant="secondary" size="lg" className="h-14 px-12 text-lg">
                   <a href="https://chat.whatsapp.com/IFK6lynlK4d2sjheuzRtLt" target="_blank" rel="noopener noreferrer">
-                    Quero participar
+                    Quero participar <ArrowRight className="ml-2" />
                   </a>
                 </Button>
                 <ArrowRight className="text-black" size={80} strokeWidth={3} />
