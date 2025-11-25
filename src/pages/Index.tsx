@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-warehouse.jpg";
 import storeSign from "@/assets/store-sign.jpg";
 import catalogoImage from "@/assets/catalogo-preview.jpg";
+import mandaOfertasLogo from "@/assets/manda-ofertas-logo.png";
 const Index = () => {
   return <div className="min-h-screen">
       <Header />
@@ -122,7 +123,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
               <div className="w-64 h-64 md:w-80 md:h-80 bg-black rounded-3xl flex items-center justify-center">
-                <img src={storeSign} alt="Manda Ofertas" className="w-48 h-48 object-contain opacity-80" />
+                <img src={mandaOfertasLogo} alt="Manda Ofertas" className="w-48 h-48 object-contain" />
               </div>
             </div>
             
