@@ -18,7 +18,7 @@ const Index = () => {
     }}>
         <div className="container mx-auto px-4 text-center text-white">
           <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">Distribuidora Manda Tudo</h1>
-          <p className="hero-subtitle md:text-2xl mb-8 max-w-2xl mx-auto text-xl font-bold">
+          <p className="hero-subtitle md:text-2xl mb-8 max-w-2xl mx-auto font-bold text-xl">
             Distribuindo sabores extraordinários para momentos extraordinários
           </p>
           <div className="hero-cta px-0 text-center font-sans">
@@ -115,7 +115,9 @@ const Index = () => {
       </section>
 
       {/* WhatsApp Community Section */}
-      <section className="py-20" style={{ backgroundColor: '#F2801F' }}>
+      <section className="py-20" style={{
+      backgroundColor: '#F2801F'
+    }}>
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
@@ -125,25 +127,17 @@ const Index = () => {
             </div>
             
             <div className="text-white">
-              <h2 className="text-5xl md:text-6xl font-bold mb-6">
+              <h2 className="text-5xl font-bold mb-6 md:text-5xl">
                 Comunidade de Ofertas
               </h2>
-              <p className="text-2xl md:text-3xl mb-12 leading-relaxed">
+              <p className="text-2xl md:text-3xl mb-12 leading-relaxed font-semibold">
                 Clique no link ao lado para fazer parte da nossa comunidade de ofertas, o Manda Ofertas.
                 Por lá você ficará sabendo de todas as nossas promoções todos os dias!
               </p>
               
               <div className="flex items-center gap-8">
-                <Button 
-                  asChild 
-                  size="lg"
-                  className="bg-black hover:bg-black/90 text-white text-xl px-8 py-6 h-auto rounded-full"
-                >
-                  <a 
-                    href="https://chat.whatsapp.com/IFK6lynlK4d2sjheuzRtLt" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
+                <Button asChild size="lg" className="bg-black hover:bg-black/90 text-white text-xl px-8 py-6 h-auto rounded-full">
+                  <a href="https://chat.whatsapp.com/IFK6lynlK4d2sjheuzRtLt" target="_blank" rel="noopener noreferrer">
                     Quero participar
                   </a>
                 </Button>
