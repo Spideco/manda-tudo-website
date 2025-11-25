@@ -25,7 +25,7 @@ const Index = () => {
           <div className="hero-cta px-0 text-center font-sans">
             <Button asChild variant="hero" size="lg">
               <Link to="/quem-somos">
-                Quem somos <ArrowRight className="ml-2" />
+                Quem somos 
               </Link>
             </Button>
           </div>
@@ -45,7 +45,7 @@ const Index = () => {
 
               <Button asChild variant="default" size="lg">
                 <Link to="/quem-somos">
-                  Saiba mais <ArrowRight className="ml-2" />
+                  Saiba mais 
                 </Link>
               </Button>
             </div>
@@ -109,7 +109,7 @@ const Index = () => {
 
           <Button asChild variant="secondary" size="lg" className="h-14 px-12 text-lg">
             <a href="https://mandaofertas.my.canva.site/catalogo-manda-tudo-2025" target="_blank" rel="noopener noreferrer">
-              Ver catálogo completo <ArrowRight className="ml-2" />
+              Ver catálogo completo 
             </a>
           </Button>
         </div>
@@ -137,10 +137,10 @@ const Index = () => {
               <div className="flex items-center gap-8">
                 <Button asChild variant="secondary" size="lg" className="h-14 px-12 text-lg">
                   <a href="https://chat.whatsapp.com/IFK6lynlK4d2sjheuzRtLt" target="_blank" rel="noopener noreferrer">
-                    Quero participar <ArrowRight className="ml-2" />
+                    Quero participar 
                   </a>
                 </Button>
-                <ArrowRight className="text-black" size={80} strokeWidth={3} />
+                
               </div>
             </div>
           </div>
