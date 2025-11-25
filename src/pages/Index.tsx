@@ -125,13 +125,13 @@ const Index = () => {
               <img src={mandaOfertasLogo} alt="Manda Ofertas" className="w-80 h-80 md:w-96 md:h-96 object-contain" />
             </div>
             
-            <div className="text-white">
+            <div className="text-white text-center md:text-left">
               <h2 className="text-5xl font-bold mb-6 md:text-5xl">
                 Comunidade de Ofertas
               </h2>
               <p className="text-2xl mb-12 leading-relaxed font-normal md:text-2xl">Clique no botão abaixo para fazer parte da nossa comunidade de ofertas, o Manda Ofertas. Por lá você ficará sabendo de todas as nossas promoções diariamente</p>
               
-              <div className="flex items-center gap-8">
+              <div className="flex items-center gap-8 justify-center md:justify-start">
                 <Button asChild variant="secondary" size="lg" className="h-14 px-12 text-lg">
                   <a href="https://chat.whatsapp.com/IFK6lynlK4d2sjheuzRtLt" target="_blank" rel="noopener noreferrer">
                     Quero participar 
