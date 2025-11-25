@@ -114,6 +114,46 @@ const Index = () => {
         </div>
       </section>
 
+      {/* WhatsApp Community Section */}
+      <section className="py-20" style={{ backgroundColor: '#F2801F' }}>
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center">
+              <div className="w-64 h-64 md:w-80 md:h-80 bg-black rounded-3xl flex items-center justify-center">
+                <img src={storeSign} alt="Manda Ofertas" className="w-48 h-48 object-contain opacity-80" />
+              </div>
+            </div>
+            
+            <div className="text-white">
+              <h2 className="text-5xl md:text-6xl font-bold mb-6">
+                Comunidade de Ofertas
+              </h2>
+              <p className="text-2xl md:text-3xl mb-12 leading-relaxed">
+                Clique no link ao lado para fazer parte da nossa comunidade de ofertas, o Manda Ofertas.
+                Por lá você ficará sabendo de todas as nossas promoções todos os dias!
+              </p>
+              
+              <div className="flex items-center gap-8">
+                <Button 
+                  asChild 
+                  size="lg"
+                  className="bg-black hover:bg-black/90 text-white text-xl px-8 py-6 h-auto rounded-full"
+                >
+                  <a 
+                    href="https://chat.whatsapp.com/IFK6lynlK4d2sjheuzRtLt" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Quero participar
+                  </a>
+                </Button>
+                <ArrowRight className="text-black" size={80} strokeWidth={3} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 text-center">
