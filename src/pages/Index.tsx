@@ -129,7 +129,7 @@ const Index = () => {
               <h2 className="text-5xl font-bold mb-6 md:text-5xl">
                 Comunidade de Ofertas
               </h2>
-              <p className="text-2xl mb-12 leading-relaxed font-normal md:text-xl">Clique no botão abaixo para fazer parte da nossa comunidade de ofertas, o Manda Ofertas. Por lá você ficará sabendo de todas as nossas promoções diariamente</p>
+              <p className="text-2xl mb-12 leading-relaxed font-normal md:text-xl">Clique no botão abaixo para fazer parte da nossa comunidade de ofertas, o Manda Ofertas. Por lá você ficará sabendo de todas as nossas promoções diariamente.</p>
               
               <div className="flex items-center gap-8 justify-center md:justify-start">
                 <Button asChild variant="secondary" size="lg" className="h-14 px-12 text-lg">
