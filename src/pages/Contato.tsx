@@ -52,12 +52,15 @@ const Contato = () => {
       return;
     }
 
+    // Capitalize first letter of customer type
+    const capitalizedType = formData.customerType.charAt(0).toUpperCase() + formData.customerType.slice(1);
+
     // Create WhatsApp message based on customer type
     let whatsappMessage = "";
     if (formData.customerType === "atacado") {
-      whatsappMessage = `Olá, me chamo ${formData.name} e sou cliente ${formData.customerType} e tenho um(a) ${formData.businessType}, vim pelo site e gostaria de saber mais sobre os produtos!`;
+      whatsappMessage = `Olá, me chamo ${formData.name} e sou cliente ${capitalizedType} e tenho um(a) ${formData.businessType}, vim pelo site e gostaria de saber mais sobre os produtos!`;
     } else {
-      whatsappMessage = `Olá, me chamo ${formData.name} e sou cliente ${formData.customerType}, vim pelo site e gostaria de saber mais sobre os produtos!`;
+      whatsappMessage = `Olá, me chamo ${formData.name} e sou cliente ${capitalizedType}, vim pelo site e gostaria de saber mais sobre os produtos!`;
     }
     const whatsappUrl = `https://wa.me/5512981305757?text=${encodeURIComponent(whatsappMessage)}`;
 
