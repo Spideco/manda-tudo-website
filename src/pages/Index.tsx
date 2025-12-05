@@ -122,7 +122,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center items-center">
-              <img src={mandaOfertasLogo} alt="Manda Ofertas" className="w-80 h-80 md:w-96 md:h-96 object-contain hover-lift" />
+              <img src={mandaOfertasLogo} alt="Manda Ofertas" className="w-80 h-80 md:w-96 md:h-96 object-contain" />
             </div>
             
             <div className="text-white text-center md:text-left">
