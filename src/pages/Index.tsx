@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-warehouse.jpg";
 import storeSign from "@/assets/store-sign.jpg";
-import catalogoImage from "@/assets/catalogo-preview.jpg";
+import catalogoImage from "@/assets/catalogo-2026.png";
 import mandaOfertasLogo from "@/assets/manda-ofertas-logo.png";
 const Index = () => {
   return <div className="min-h-screen">
@@ -104,7 +104,7 @@ const Index = () => {
           </p>
 
           <div className="max-w-4xl mx-auto mb-8">
-            <img src={catalogoImage} alt="Catálogo de Produtos Manda Tudo 2025" className="w-full h-auto rounded-2xl shadow-card hover-lift" />
+            <img src={catalogoImage} alt="Catálogo de Produtos Manda Tudo 2026" className="w-full h-auto rounded-2xl shadow-card hover-lift" />
           </div>
 
           <Button asChild variant="secondary" size="lg" className="h-14 px-12 text-lg">
