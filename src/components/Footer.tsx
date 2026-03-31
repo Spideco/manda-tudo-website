@@ -40,11 +40,7 @@ const Footer = () => {
             <div className="space-y-3 text-secondary-foreground/80">
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-primary flex-shrink-0" />
-                <span>Contato Loja 1:(12) 98130-5757</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone size={20} className="text-primary flex-shrink-0" />
-                <span>Contato Loja 2:(12) 98806-9694</span>
+                <span>Contato: (12) 98130-5757</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary flex-shrink-0" />
@@ -59,9 +55,6 @@ const Footer = () => {
               </a>
               <a href="https://www.facebook.com/distribuidoramandatudo/" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/80 hover:text-primary transition-colors" aria-label="Facebook">
                 <Facebook size={24} />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/80 hover:text-primary transition-colors" aria-label="LinkedIn">
-                
               </a>
             </div>
           </div>
