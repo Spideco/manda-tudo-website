@@ -62,7 +62,7 @@ const Contato = () => {
     } else {
       whatsappMessage = `Olá, me chamo ${formData.name} e sou cliente ${capitalizedType}, vim pelo site e gostaria de saber mais sobre os produtos!`;
     }
-    const whatsappUrl = `https://wa.me/5512981305757?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/5512991817887?text=${encodeURIComponent(whatsappMessage)}`;
 
     // Redirect to WhatsApp
     window.open(whatsappUrl, "_blank");
@@ -152,7 +152,7 @@ const Contato = () => {
                   ...formData,
                   customerType: value,
                   businessType: value === "varejo" ? "" : formData.businessType
-                })}>
+                })}> 
                     <SelectTrigger id="customerType" className="w-full">
                       <SelectValue placeholder="Escolha uma opção" />
                     </SelectTrigger>
@@ -170,7 +170,7 @@ const Contato = () => {
                     <Select value={formData.businessType} onValueChange={value => setFormData({
                   ...formData,
                   businessType: value
-                })}>
+                })}> 
                       <SelectTrigger id="businessType" className="w-full">
                         <SelectValue placeholder="Escolha uma opção" />
                       </SelectTrigger>
@@ -211,8 +211,8 @@ const Contato = () => {
                 <p className="text-white/90">Taubaté - SP</p>
               </div>
               <div className="h-80">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.8!2d-45.5544!3d-23.0267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cccf0e0e0e0e0f%3A0x0!2sRua%20Bom%20Jardim%2C%20139%20-%20Santa%20Luzia%2C%20Taubat%C3%A9%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623456789012!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{
-                border: 0
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.8!2d-45.5544!3d-23.0267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cccf0e0e0e0e0f%3A0x0!2sRua%20Bom%20Jardim%2C%20139%20-%20Santa%20Luzia%2C%20Taubat%C3%A9%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623456789012!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{ 
+                border: 0 
               }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Mapa Loja 1 - Santa Luzia" />
               </div>
               <div className="p-6">
