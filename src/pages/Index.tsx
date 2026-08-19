@@ -6,17 +6,49 @@ import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-warehouse.jpg";
 import storeSign from "@/assets/store-sign.jpg";
 import catalogoImage from "@/assets/catalogo-2026.png";
-import mandaOfertasLogo from "@/assets/manda-ofertas-logo.png";
+
 const Index = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center" style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center"
-    }}>
+      <section
+        className="relative h-screen flex items-center justify-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >
+        <div className="container mx-auto px-4 text-center text-white">
+          <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">Distribuidora Manda Tudo</h1>
+          <p className="hero-subtitle md:text-2xl mb-8 max-w-2xl mx-auto font-bold text-xl">
+            Distribuindo sabores extraordinários para momentos extraordinários
+          <dyad-write path="src/pages/Index.tsx" description="Remover seção da Comunidade de Ofertas da página inicial">
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Package, Users, Heart } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import heroImage from "@/assets/hero-warehouse.jpg";
+import storeSign from "@/assets/store-sign.jpg";
+import catalogoImage from "@/assets/catalogo-2026.png";
+
+const Index = () => {
+  return (
+    <div className="min-h-screen">
+      <Header />
+
+      {/* Hero Section */}
+      <section
+        className="relative h-screen flex items-center justify-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >
         <div className="container mx-auto px-4 text-center text-white">
           <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">Distribuidora Manda Tudo</h1>
           <p className="hero-subtitle md:text-2xl mb-8 max-w-2xl mx-auto font-bold text-xl">
@@ -115,33 +147,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* WhatsApp Community Section */}
-      <section className="py-20 bg-primary">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center items-center">
-              <img src={mandaOfertasLogo} alt="Manda Ofertas" className="w-80 h-80 md:w-96 md:h-96 object-contain" />
-            </div>
-            
-            <div className="text-white text-center md:text-left">
-              <h2 className="text-5xl font-bold mb-6 md:text-5xl">
-                Comunidade de Ofertas
-              </h2>
-              <p className="text-2xl mb-12 leading-relaxed font-normal md:text-xl">Clique no botão abaixo para fazer parte da nossa comunidade de ofertas, o Manda Ofertas. Por lá você ficará sabendo de todas as nossas promoções diariamente.</p>
-              
-              <div className="flex items-center gap-8 justify-center md:justify-start">
-                <Button asChild variant="secondary" size="lg" className="h-14 px-12 text-lg">
-                  <a href="https://chat.whatsapp.com/IFK6lynlK4d2sjheuzRtLt" target="_blank" rel="noopener noreferrer">
-                    Quero participar 
-                  </a>
-                </Button>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 text-center">
@@ -159,6 +164,8 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
