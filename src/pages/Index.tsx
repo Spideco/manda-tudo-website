@@ -25,34 +25,6 @@ const Index = () => {
           <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">Distribuidora Manda Tudo</h1>
           <p className="hero-subtitle md:text-2xl mb-8 max-w-2xl mx-auto font-bold text-xl">
             Distribuindo sabores extraordinários para momentos extraordinários
-          <dyad-write path="src/pages/Index.tsx" description="Remover seção da Comunidade de Ofertas da página inicial">
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Package, Users, Heart } from "lucide-react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import heroImage from "@/assets/hero-warehouse.jpg";
-import storeSign from "@/assets/store-sign.jpg";
-import catalogoImage from "@/assets/catalogo-2026.png";
-
-const Index = () => {
-  return (
-    <div className="min-h-screen">
-      <Header />
-
-      {/* Hero Section */}
-      <section
-        className="relative h-screen flex items-center justify-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}
-      >
-        <div className="container mx-auto px-4 text-center text-white">
-          <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">Distribuidora Manda Tudo</h1>
-          <p className="hero-subtitle md:text-2xl mb-8 max-w-2xl mx-auto font-bold text-xl">
-            Distribuindo sabores extraordinários para momentos extraordinários
           </p>
           <div className="hero-cta px-0 text-center font-sans">
             <Button asChild variant="hero" size="lg">
@@ -109,7 +81,7 @@ const Index = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Agilidade</h3>
               <p className="text-muted-foreground">
-                Dedicação total em entregas ráidas, agilizando sempre o seu negócio.
+                Dedicação total em entregas rápidas, agilizando sempre o seu negócio.
               </p>
             </div>
 
